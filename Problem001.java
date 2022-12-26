@@ -1,4 +1,4 @@
-public class Problem1 {
+public class Problem001 {
     public static void main(String[] args) {
         int a3 = 999 / 3;
         int a5 = 999 / 5;

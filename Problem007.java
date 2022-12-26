@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem7 {
+public class Problem007 {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         int i = 2;
         boolean b;
 

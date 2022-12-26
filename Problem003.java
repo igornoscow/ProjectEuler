@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem3 {
+public class Problem003 {
     public static void main(String[] args) {
-        List<Long> list = new ArrayList<Long>();
+        List<Long> list = new ArrayList<>();
         long number = Long.parseLong("600851475143");
         long copyNumber;
         long i = 2;

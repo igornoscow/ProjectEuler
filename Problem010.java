@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem10 {
+public class Problem010 {
     public static void main(String[] args) {
-        List<Integer> primes = new ArrayList<Integer>();
+        List<Integer> primes = new ArrayList<>();
         boolean notPrime;
         long sum = 0;
 

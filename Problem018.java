@@ -1,4 +1,6 @@
 public class Problem018 {
+    static int[][] grid;
+
     public static void main(String[] args) {
         String string = "75\n" +
                 "95 64\n" +
@@ -16,7 +18,7 @@ public class Problem018 {
                 "63 66 04 68 89 53 67 30 73 16 69 87 40 31\n" +
                 "04 62 98 27 23 09 70 98 73 93 38 53 60 04 23";
         char[] data = string.toCharArray();
-        int[][] grid = new int[15][15];
+        grid = new int[15][16];
         int p = 0;
         int pointerGrid = 0;
         int pointerCell = 0;
@@ -32,6 +34,22 @@ public class Problem018 {
                 pointerCell = 0;
             }
             p++;
+        }
+
+        System.out.println(sum(0,0));
+    }
+
+    public static int sum(int height, int width) {
+        if (height == grid.length-1 || width == grid[height].length-1) {
+            return grid[height][width];
+        }
+        int sum1 = sum(height+1, width);
+        int sum2 = sum(height+1, width+1);
+
+        if (sum1 > sum2) {
+            return grid[height][width] + sum1;
+        } else {
+            return grid[height][width] + sum2;
         }
     }
 }

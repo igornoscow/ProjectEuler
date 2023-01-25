@@ -17,7 +17,7 @@ public class Problem005 {
             else {
                 b = false;
             }
-            number = number + baseNumber;
+	    number = number + baseNumber;
         }
 
         System.out.println(number);
